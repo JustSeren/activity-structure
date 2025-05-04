@@ -14,8 +14,11 @@ class DetaySayfasi : AppCompatActivity() {
 
         binding = ActivityDetaySayfasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        val gelenAd = intent.getStringExtra("ad")
+        val gelenYas = intent.getIntExtra("yas", 0)
+        val gelenOkul = intent.getStringExtra("okul")
         binding.detayText.text = "Oş Geldin be yaa"
+        binding.kullanCBilgi.text = " ${gelenAd + gelenYas + gelenOkul} "
 
     }
 }

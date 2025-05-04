@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
             //Snackbar.make(it, "Im here", Snackbar.LENGTH_SHORT).show()
             //binding.textView.text = "Vuu"
             val intent = Intent( this@MainActivity, DetaySayfasi::class.java)
+            intent.putExtra("ad", "Seren ")
+            intent.putExtra("yas", 25)
+            intent.putExtra("okul", "çalışmıyor ")
             startActivity(intent)
         }
 
